@@ -1,0 +1,42 @@
+@import "/assets/css/common_style.css";
+
+/*** Footer ***/
+.footer-section{
+    background-color: var(--primary);
+}
+.footer-section p .fa,
+.footer-section a .fa{
+    margin-right: 7px;
+}
+.footer-section a{
+    text-decoration: none;
+}
+.footer-section a:hover{
+    transform: scale(1.05);
+}
+.btn-social {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    transition: .3s;
+}
+.btn-social:hover {
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.copyright{
+    background-color: var(--secondary);
+}
+
+.copyright a {
+    text-decoration: none;
+}
+.copyright a:hover{
+    color: var(--primary);
+    transform: scale(1.05);
+}

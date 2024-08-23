@@ -1,4 +1,63 @@
+
 @charset "UTF-8";
+
+/********** Template CSS **********/
+:root {
+  --primary: #DDE6ED;
+  --secondary: #27374D;
+  --light: #ffffff;
+  --dark: #000000;
+}
+/* .back-to-top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+}
+.back-to-top:hover{
+  background-color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* all text  */
+.text-primary1{
+  font-family: 'Inter', sans-serif;
+  color: var(--primary);
+}
+.text-primary2{
+  font-family: 'Inter', sans-serif;
+  color: var(--secondary);
+}
+.text-secondary1{
+  font-family: 'Heebo', sans-serif;
+  color: var(--primary);
+}
+.text-secondary2{
+  font-family: 'Heebo', sans-serif;
+  color: var(--secondary);
+}
+
+
 *,
 * button:focus {
   outline: 0;

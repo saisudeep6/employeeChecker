@@ -1,0 +1,50 @@
+
+@import "/components/Spinner/Spinner.css";
+@import "/components/Navbars/Navbars.css";
+@import "/components/Footer/Footer.css";
+@import "/components/BackToTop/BackToTop.css";
+
+
+/*** main section ***/
+.mainsection{
+    height: 110vh;
+    width: 100%;
+    margin-top: -120px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+@media (max-width: 991.98px) {
+    .mainsection {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+@media (min-width: 992px) {
+    .mainsection {
+        height: 110vh;
+        margin-top: -120px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .mainsection_row{
+        /* background-image: url(../img/mainsection2.png); */
+        background-position: center;
+        background-size: cover;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+.Form-card{
+    height: auto;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
