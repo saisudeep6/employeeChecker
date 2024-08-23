@@ -1216,7 +1216,6 @@
 }
 .tc-header-st3{
   position: relative;
-  /* padding: 210px 0 300px; */
   background-color: #ccdbec;
   z-index: 0;
 }
@@ -1233,6 +1232,7 @@
   z-index: 0;
 }
 .tc-header-st3 .circle {
+  height: 100vh;
   position: absolute;
   left: 50%;
   top: 0;
