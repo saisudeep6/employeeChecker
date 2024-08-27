@@ -1,6 +1,17 @@
 a{
     text-decoration: none !important;
 }
-.formCard{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.HeroSection{
+    background-color: rgba(0, 0, 0, 0.116);
 }
+.mainHeroContent{
+    height: auto;
+}
+.SubHeroContent{
+    height: auto;
+    border-radius: 0px;
+    background-color: white;
+}
+.formCard{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
