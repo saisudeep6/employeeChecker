@@ -2230,35 +2230,6 @@ input:focus {
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
 }
-
-.linear-butn1 {
-  padding: 15px 40px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  position: relative;
-  text-align: center;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    from(#1b1b1b),
-    to(#3b3b3b)
-  );
-  background-image: linear-gradient(0deg, #1b1b1b 0%, #3b3b3b 100%);
-  color: #fff;
-}
-.linear-butn1.md-butn {
-  padding: 10px 25px;
-}
-.linear-butn1:hover {
-  -webkit-box-shadow: 4px 5px 0 #0005;
-  box-shadow: 4px 5px 0 #0005;
-  -webkit-box-shadow: 7px 10px 15px #0004;
-  box-shadow: 7px 10px 15px #0004;
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
 @media screen and (max-width: 991px) {
   .butn {
     padding: 10px 20px;
