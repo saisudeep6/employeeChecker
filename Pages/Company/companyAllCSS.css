@@ -2,15 +2,30 @@ a{
     text-decoration: none !important;
 }
 .HeroSection{
-    background-color: rgba(0, 0, 0, 0.116);
+    background-color: rgb(157, 183, 223);
 }
 .mainHeroContent{
     height: auto;
 }
 .SubHeroContent{
-    height: auto;
-    border-radius: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     background-color: white;
+}
+.SubHeroContent select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('/assets/img/icons/down.png') no-repeat right center;
+    background-position: calc(100% - 20px) center;
+    background-size: 12px;
+}
+@media (min-width:999px) {
+    .SubHeroContent{
+        border-top-left-radius: 40px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 40px;
+    }
 }
 .formCard{
     background-color: white;

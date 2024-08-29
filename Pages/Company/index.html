@@ -227,7 +227,7 @@
               <div class="mb-4">
                 <div class="flex justify-center text-center mx-auto mb-3">
                   <div class="w-full">
-                    <select name="Select" id="mySelect" onchange="changeText()" class="custom_select py-3 px-4 block w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none">
+                    <select name="Select" id="mySelect" onchange="changeText()" required class="custom_select py-3 px-4 block w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none">
                       <option value="None" disabled selected>Select your option</option>
                       <option value="BvAgency" class="custom_option">BV Agency</option>
                       <option value="ExEmployee">Ex-Empolyee</option>
@@ -239,7 +239,7 @@
                     >Enter Username or Employee Id</span
                   ></label
                 >
-                <input
+                <input required
                   type="email"
                   id="hs-hero-email-2"
                   class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none"
@@ -251,7 +251,7 @@
                 <label for="hs-hero-password-2" class="block text-sm font-medium"
                   ><span class="sr-only">Password</span></label
                 >
-                <input
+                <input required
                   type="password"
                   id="hs-hero-password-2"
                   class="py-3 px-4 block w-full border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none"
