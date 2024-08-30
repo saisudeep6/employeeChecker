@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="companyAllCSS.css">
   </head>
   <body>
+    <div id="spinner" class="show bg-white w-screen h-screen flex flex-row items-center justify-center overflow-hidden">
+      <div  class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+   </div>
     <!-- ========== HEADER ========== -->
     <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200">
       <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
@@ -225,13 +231,16 @@
           <div class="formCard rounded-lg">
             <form class="w-full mt-5 mx-auto p-5 ">
               <div class="mb-4">
-                <div class="flex justify-center text-center mx-auto mb-3">
-                  <div class="w-full">
-                    <select name="Select" id="mySelect" onchange="changeText()" required class="custom_select py-3 px-4 block w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none focus:outline-none">
-                      <option value="None" disabled selected>Select your option</option>
-                      <option value="BvAgency" class="custom_option">BV Agency</option>
-                      <option value="ExEmployee">Ex-Empolyee</option>
-                    </select>
+                <div class="text-center mx-auto mb-3">
+                  <div class="w-full flex justify-center">
+                    <div class="m-2">
+                      <input type="radio" name="option" value="BvAgency" onclick="changeText(event)">
+                      <label class="font-medium">Bv Agency</label>
+                    </div>
+                    <div class="m-2">
+                      <input type="radio" name="option" value="ExEmployee" onclick="changeText(event)">
+                      <label class="font-medium">Ex Employee</label>
+                    </div>
                   </div>
                 </div>
                 <label for="hs-hero-email-2" class="block text-sm font-medium"
@@ -304,24 +313,6 @@
     </footer>
     <!-- Footer End -->
 
-    <script>
-      function changeText(){
-        var selectElement = document.getElementById('mySelect');
-        var selectedValue = selectElement.value;
-
-        if (selectedValue === "None") {
-            document.getElementById('mainHeroContent_1').style.display="block";
-        } else if (selectedValue === "BvAgency") {
-          document.getElementById('mainHeroContent_1').style.display="none";
-          document.getElementById('mainHeroContent_2').style.display="block";
-          document.getElementById('mainHeroContent_3').style.display="none";
-
-        } else if (selectedValue === "ExEmployee") {
-          document.getElementById('mainHeroContent_1').style.display="none";
-          document.getElementById('mainHeroContent_2').style.display="none";
-          document.getElementById('mainHeroContent_3').style.display="block";
-        }
-      }
-    </script>
+    <script src="companyJS.js"></script>
   </body>
 </html>

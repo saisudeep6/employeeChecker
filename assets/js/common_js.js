@@ -1,4 +1,5 @@
 $( function() {
+    
 
     var wind = $(window);
 
@@ -19,14 +20,6 @@ $( function() {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-
-    // demos dropdown toggle show
-    $(".demos-dropdown-toggle , .demos-dropdown").on("mouseenter", function(){
-        $(this).parent().find(".demos-dropdown").addClass("show");
-    })
-    $(".demos-dropdown-toggle , .demos-dropdown").on("mouseleave", function(){
-        $(this).parent().find(".demos-dropdown").removeClass("show");
-    })
 
     // ---------- links transition -----------
     var links = document.querySelectorAll('.fade-link');
