@@ -119,9 +119,13 @@ a{
 .mainHeroContent{
     height: auto;
 }
-.mainHeroContent a{
+.mainHeroContent .XEmpbranding{
   background-color: var(--primary);
   color: var(--secondary);
+}
+.mainHeroContent span{
+  color: var(--primary);
+  -webkit-text-stroke: 1px var(--secondary);
 }
 .SubHeroContent{
     border-top-left-radius: 30px;
@@ -214,22 +218,22 @@ footer a:hover{
 .AdminSection .box-shadow{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.AdminSection thead{
-  background-color: var(--secondaryshade);
-}
-.AdminSection th, td {
-  padding: 7px;
-  border: 1px solid rgb(165, 165, 165);
-  text-align: center;
-}
-.AdminSection td{
-  background-color: var(--primaryshade);
-}
 .AdminSection img{
   max-height: 400px;
 }
 .AdminSection .ourtable{
   height: 400px;
+}
+.AdminSection thead{
+  background-color: var(--secondaryshade);
+}
+.AdminSection th, td {
+  padding: 7px;
+  border: 1px solid var(--secondaryshade);
+  text-align: center;
+}
+.AdminSection td{
+  background-color: var(--primaryshade);
 }
 .AdminSection .ourtable th{
   color: var(--secondary);
@@ -287,4 +291,98 @@ footer a:hover{
   padding: 10px;
   text-align: left;
   text-align: center;
+}
+
+/*------------------- BGV Vendor ------------- */
+.BGVvendor .butn{
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--primary);
+}
+.BGVvendor .butn:hover{
+  background-color: var(--secondaryshade);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+.BGVvendor .ourtable1 td{
+  border: none;
+  text-align: left;
+  color: var(--secondary);
+}
+.BGVvendor .ourtable2{
+  height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.BGVvendor .ourtable2 th{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 7px;
+  text-align: center;
+}
+.BGVvendor .ourtable2 td{
+  color: var(--secondary);
+  padding: 7px;
+  border: 1px solid var(--secondary);
+  text-align: center;
+}
+.BGVvendor .ourtable2 td{
+  background-color: var(--primaryshade);
+}
+.BGVvendor .ourtable2 .actions{
+  width: 100px;
+}
+
+/* ------------ BVG New Case ------------- */
+.BVGNewcase{
+  position: relative;
+}
+.BVGNewcase .formcard{
+  padding: 10px;
+  background-color: transparent;
+
+}
+.BVGNewcase .formcard .tablehead{
+  text-align: left;
+  font-size: 12px;
+  max-width: 100px;
+}
+@media (min-width:999px)  {
+  .BVGNewcase .formcard .tablehead{
+    font-size: 16px;
+    min-width: 200px;
+  }
+}
+.BVGNewcase .formcard td input{
+  text-align: left;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary);
+  font-size: 14px;
+}
+.BVGNewcase .formcard td input:focus{
+  outline: none;
+}
+.BVGNewcase .formcard label{
+  color: var(--secondary);
+  font-family:"Titillium Web", sans-serif ;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.BVGNewcase .formcard hr{
+  border-top: 1px solid var(--secondary);
+}
+.BVGNewcase .butn{
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--primary);
+  margin: 0px 20px;
+}
+.BVGNewcase .butn:hover{
+  background-color: var(--secondaryshade);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
 }
