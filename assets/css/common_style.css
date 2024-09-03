@@ -1,5 +1,39 @@
 
 @charset "UTF-8";
+:root {
+  --primary: #DDE6ED;
+  --secondary: #27374D;
+  --primaryshade:#d2dae4;
+  --secondaryshade:#c1c8ce;
+  --light: #ffffff;
+  --dark: #000000;
+}
+
+.color-primary{
+  color: var(--primary) !important;
+}
+.color-secondary{
+  color: var(--secondary);
+}
+.color-primaryshade{
+  color: var(--primaryshade);
+}
+.color-secondaryshade{
+  color: var(--secondaryshade);
+}
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
 
 *,
 * button:focus {
@@ -34,8 +68,6 @@ body {
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
 }
-
-
 .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -410,8 +442,7 @@ input:focus {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: #999;
-  border: 1px solid #999;
+  border: 1px solid var(--secondary);
   font-size: 11px;
   text-align: center;
   padding: 7px;
@@ -429,6 +460,9 @@ input:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.to_top:hover{
+  background-color: var(--primary);
 }
 .to_top small {
   display: block;
@@ -1900,123 +1934,3 @@ input:focus {
 /* ========= [ * variable ]  =========*/
 /* --------------- variable --------------- */
 /********** Template CSS **********/
-:root {
-  --primary: #DDE6ED;
-  --secondary: #27374D;
-  --light: #ffffff;
-  --dark: #000000;
-}
-
-/*** Spinner ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity .5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
-:root {
-  --cr-blue1: #7b68ee;
-  --cr-black1: #101828;
-  --cr-black2: #240944;
-  --cr-orange1: #eb5939;
-  --ln-orange1: linear-gradient(126deg, #ee0979 0%, #ff6a00 100%);
-  --cr-green1: #2ae98c;
-  --cr-light1: #f4f2fc;
-}
-
-.cr-black1 {
-  color: var(--cr-black1) !important;
-}
-
-.bg-black1 {
-  background: var(--cr-black1) !important;
-}
-
-.border-black1 {
-  border-color: var(--cr-black1) !important;
-}
-
-.hover-black1:hover {
-  color: var(--cr-black1) !important;
-}
-
-.hover-bg-black1:hover {
-  background: var(--cr-black1) !important;
-  border-color: var(--cr-black1) !important;
-  color: #fff !important;
-}
-.hover-bg-black1:hover * {
-  color: #fff;
-}
-
-.cr-blue1 {
-  color: var(--cr-blue1) !important;
-}
-
-.bg-blue1 {
-  background: var(--cr-blue1) !important;
-}
-
-.border-blue1 {
-  border-color: var(--cr-blue1) !important;
-}
-
-.hover-blue1:hover {
-  color: var(--cr-blue1) !important;
-}
-
-.hover-bg-blue1:hover {
-  background: var(--cr-blue1) !important;
-  border-color: var(--cr-blue1) !important;
-  color: #fff !important;
-}
-.hover-bg-blue1:hover * {
-  color: #fff;
-}
-
-.cr-black2 {
-  color: var(--cr-black2) !important;
-}
-
-.bg-black2 {
-  background: var(--cr-black2) !important;
-}
-
-.border-black2 {
-  border-color: var(--cr-black2) !important;
-}
-
-.hover-black2:hover {
-  color: var(--cr-black2) !important;
-}
-
-.hover-bg-black2:hover {
-  background: var(--cr-black2) !important;
-  border-color: var(--cr-black2) !important;
-  color: #fff !important;
-}
-.hover-bg-black2:hover * {
-  color: #fff;
-}
-.hover-black:hover {
-  color: #000 !important;
-}
-
-.hover-bg-black:hover {
-  background-color: #000 !important;
-  color: #fff !important;
-}
-.hover-bg-black:hover * {
-  color: #fff;
-}
-
-.border-black {
-  border-color: #000;
-}
