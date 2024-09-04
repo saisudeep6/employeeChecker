@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PO id details</title>
+    <title>HR - Admin</title>
+
     <!-- CDN of Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -11,7 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-
+    
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <!-- CSS styles -->
     <link rel="stylesheet" href="companyAllCSS.css">
   </head>
@@ -23,8 +27,8 @@
       </div>
    </div>
     <!-- ========== HEADER ========== -->
-    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full bg-white border-b border-gray-200">
-      <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
+    <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+      <nav class="navbar relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center gap-x-1">
           <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
             <img
@@ -96,7 +100,7 @@
                   class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1"
                 >
                   <a
-                    class="p-2 flex items-center font-medium text-sm text-gray-800 bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
+                    class="fontStyle-secondary p-2 flex items-center font-semibold text-sm text-gray-800 rounded-lg"
                     href="./index.html"
                     aria-current="page"
                   >
@@ -104,7 +108,7 @@
                   </a>
 
                   <a
-                    class="p-2 flex items-center font-medium text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
+                    class="fontStyle-secondary p-2 flex items-center font-semibold text-sm text-gray-800 rounded-lg "
                     href="contact.html"
                   >
                     Contact Us
@@ -121,7 +125,7 @@
               <!-- Button Group -->
               <div class="flex flex-wrap items-center gap-x-1.5">
                 <a
-                  class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-[#3482c3] text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                  class="butn fontStyle-secondary py-2 px-2.5 inline-flex items-center font-semibold text-sm rounded-lg bg-[#3482c3] text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
                   href="./login.html"
                 >
                   Login
@@ -136,82 +140,86 @@
     </header>
     <!-- ========== END HEADER ========== -->
      <!-- Hero Start -->
-    <section class="POidSection container-fluid lg:h-screen">
-        <h1 class="text-center pt-5 heading color-secondary">PO id - 2324352435234</h1>
-        <div class="ourtable sm:w-screen lg:w-full pt-4 px-5" style="overflow:auto;">
-            <table class="table-auto lg:w-5/6  m-auto">
-                <tbody>
-                  <tr>
-                    <td class="tablehead">PO id</td>
-                    <td>:</td>
-                    <td>213434534</td>
-                    <td class="tablehead">Invoice id</td>
-                    <td>:</td>
-                    <td>213434534</td>
-                  </tr>
-                  <tr>
-                    <td class="tablehead">Issued to</td>
-                    <td>:</td>
-                    <td>21-12-2024</td>
-                  </tr>
-                  <tr>
-                    <td class="tablehead">Amount in INR</td>
-                    <td>:</td>
-                    <td>24000/-</td>
-                  </tr>
-                  <tr>
-                    <td class="tablehead">No of cases</td>
-                    <td>:</td>
-                    <td>545</td>
-                    <td class="tablehead">GSTIN No:</td>
-                    <td>:</td>
-                    <td>213434534AFAD21</td>
-                  </tr>
-                </tbody>
-            </table>
-            <div class="text-center pt-5">
-                <button class="butn rounded-xl">Print</button>
-                <button class="butn rounded-xl">Annexure</button>
+    <section class="HeroSection container-fluid p-5">
+      <div class="HRAdmin grid lg:grid-cols-12">
+        <div class="col-span-12">
+            <div class="p-5">
+                <h1 class="color-secondary text-center sm:text-xl lg:text-3xl">Welcome to HR Admin</h1>
             </div>
         </div>
-        <div class="POidourtable sm:w-screen lg:w-full p-4">
-            <div class="ourtable2 p-5 rounded rounded-2xl box-shadow lg:w-5/6 m-auto" style="overflow:auto;">
+        <div class="col-span-12">
+            <div class="lg:w-5/6 full md:flex md:items-center md:justify-between m-auto">
+                <div class="ourtable1 sm:my-3">
+                    <table class="table-auto">
+                        <tbody>
+                          <tr>
+                            <td class="tablehead">HR Admin Name</td>
+                            <td>:</td>
+                            <td>aksjdfkjadsf askjfhkja</td>
+                          </tr>
+                          <tr>
+                            <td class="tablehead">Email ID</td>
+                            <td>:</td>
+                            <td>asdflhdslf@kdflad.com</td>
+                          </tr>
+                          <tr>
+                            <td class="tablehead">Contact No</td>
+                            <td>:</td>
+                            <td>546345656</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="">
+                    <p class="mb-2 text-2xl">something</p>
+                    <a href=""><button class="butn rounded-xl flex items-center">Logout<span class="material-symbols-outlined ml-2">logout</span></button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-12 p-2" style="overflow: hidden;">
+            <div class="ourtable2 sm:w-screen lg:w-5/6 my-3 m-auto p-5 rounded-xl" style="overflow:auto;">
                 <table class="table-auto w-full">
                     <thead>
                       <tr>
-                        <th>Month</th>
-                        <th>PO Id</th>
-                        <th>Amount in INR</th>
-                        <th>Invoice Id</th>
-                        <th>Payment Date</th>
+                        <th>S.NO</th>
+                        <th>Date</th>
+                        <th>Candidate Name</th>
+                        <th>C Emp</th>
+                        <th>BGV Vendor</th>
+                        <th>Current Status</th>
+                        <th>Actions</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>September</td>
-                        <td><a href="POid.html">213434534</a></td>
-                        <td>24500/-</td>
-                        <td>1324462342</td>
-                        <td>12-10-2024</td>
-                      </tr>
-                      <tr>
-                        <td>October</td>
-                        <td><a href="POid.html">213434534</a></td>
-                        <td>21500/-</td>
-                        <td>1324462342</td>
-                        <td>12-11-2024</td>
+                        <td>234</td>
+                        <td>12-12-2024</td>
+                        <td><a href="">asdfjlk adsfjds</a></td>
+                        <td>shfkjadsfh pvt ltd</td>
+                        <td>ahfkhdasjfh</td>
+                        <td>confirm</td>
+                        <td class="actions">
+                            <div class="flex items-center justify-between ">
+                                <a href=""><span class="material-symbols-outlined" title="Reminder">notifications</span></a>
+                                <a href=""><span class="material-symbols-outlined" title="Delete">delete</span></a>
+                                <a href=""><span class="material-symbols-outlined" title="Edit">edit</span></a>
+                            </div>
+                        </td>
                       </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+      </div>
     </section>
     <!-- Hero Ends -->
 
     <!-- Footer Start -->
-    <footer class="bg-white rounded-lg shadow dark:bg-gray-800">
+    <footer class="footer rounded-lg shadow dark:bg-gray-800">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024  Powered by XEmp Services™. All Rights Reserved.
+        <span class="color-secondary text-sm sm:text-center flex items-center">Powered by <img class="mx-3" src="/assets/img/XEmp-logo9.png" alt="">Sevices</span>
+        
+        <span class="color-secondary text-sm sm:text-center">  © 2024 All Rights Reserved.
       </span>
       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>

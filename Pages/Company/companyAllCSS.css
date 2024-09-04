@@ -245,7 +245,31 @@ footer a:hover{
   text-align: left;
   color: var(--secondary);
 }
-
+@media (max-width:480px) {
+  .AdminSection .heading{
+    font-size: 16px;
+  }
+  .AdminSection .ourtable table{
+    display: block;
+    overflow: scroll;
+  }
+  .AdminSection th, .AdminSection td{
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+.AdminSection .butn{
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--primary);
+}
+.AdminSection .butn:hover{
+  background-color: var(--secondaryshade);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+/* -------------- PO id Page ---------------- */
 .POidSection{
   background-color: var(--secondaryshade);
 }
@@ -255,7 +279,7 @@ footer a:hover{
 .POidSection tr td{
   color: var(--secondary);
   border:none;
-  padding: 10px;
+  padding: 7px;
   text-align: left;
 }
 .tablehead{
@@ -276,23 +300,37 @@ footer a:hover{
 .box-shadow{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-.POidourtable .table-auto{
-  background-color: white;
-}
 .POidourtable .ourtable2 th{
-  background-color: var(--secondaryshade);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
 }
 .POidourtable .ourtable2 td{
   background-color: var(--primary);
 }
 .POidourtable tr th, .POidourtable tr td{
   border:1px solid black;
-  padding: 10px;
+  padding: 7px;
   text-align: left;
   text-align: center;
 }
-
+@media (max-width:480px) {
+  .POidourtable .heading{
+    font-size: 16px;
+  }
+  .POidSection .ourtable {
+    display: block;
+    overflow: scroll;
+  }
+  .POidSection .ourtable th,  .POidSection .ourtable td{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .POidourtable th, .POidourtable td{
+    font-size: 12px;
+    padding: 7px;
+  }
+}
 /*------------------- BGV Vendor ------------- */
 .BGVvendor .butn{
   background-color: var(--secondary);
@@ -322,13 +360,21 @@ footer a:hover{
   text-align: center;
 }
 .BGVvendor .ourtable2 td{
+  background-color: var(--primaryshade);
   color: var(--secondary);
   padding: 7px;
   border: 1px solid var(--secondary);
   text-align: center;
 }
-.BGVvendor .ourtable2 td{
-  background-color: var(--primaryshade);
+@media (max-width:480px) {
+  .BGVvendor .ourtable2{
+    display: block;
+    overflow: scroll;
+  }
+  .BGVvendor .ourtable2 th, .BGVvendor .ourtable2 td{
+    font-size: 12px;
+    padding: 5px;
+  }
 }
 .BGVvendor .ourtable2 .actions{
   width: 100px;
@@ -385,4 +431,53 @@ footer a:hover{
   background-color: var(--secondaryshade);
   color: var(--secondary);
   border: 1px solid var(--secondary);
+}
+
+/*------------------- BGV Vendor ------------- */
+.HRAdmin .butn{
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+  border: 1px solid var(--primary);
+}
+.HRAdmin .butn:hover{
+  background-color: var(--secondaryshade);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+.HRAdmin .ourtable1 td{
+  border: none;
+  text-align: left;
+  color: var(--secondary);
+}
+.HRAdmin .ourtable2{
+  height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.HRAdmin .ourtable2 th{
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 7px;
+  text-align: center;
+}
+.HRAdmin .ourtable2 td{
+  background-color: var(--primaryshade);
+  color: var(--secondary);
+  padding: 7px;
+  border: 1px solid var(--secondary);
+  text-align: center;
+}
+@media (max-width:480px) {
+  .HRAdmin .ourtable2{
+    display: block;
+    overflow: scroll;
+  }
+  .HRAdmin .ourtable2 th, .HRAdmin .ourtable2 td{
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+.HRAdmin .ourtable2 .actions{
+  width: 100px;
 }
