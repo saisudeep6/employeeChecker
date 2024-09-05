@@ -40,8 +40,9 @@
   background-color: var(--primaryshade);
 }
 .tc-navbar-st2 .navbar-nav .nav-link.active {
-  background-color: var(--primaryshade);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
 }
 .tc-navbar-st2 .butn{
   background-color: var(--secondary);

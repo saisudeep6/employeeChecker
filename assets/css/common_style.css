@@ -260,7 +260,8 @@ small.text {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: transparent;
+  background: radial-gradient(ellipse at top, var(--primary), var(--secondaryshade)),
+  radial-gradient(ellipse at bottom, var(--primary), var(--secondaryshade));
   z-index: 99999999999999;
   overflow: hidden;
 }
@@ -290,14 +291,22 @@ small.text {
 }
 
 .loader-wrap .loader-wrap-heading .load-text {
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 15px;
-  text-transform: uppercase;
   z-index: 20;
-  color: #000;
+  color:var(--secondary);
 }
-
+@media (max-width:999px) {
+  .loader-wrap .loader-wrap-heading .load-text {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    z-index: 20;
+    color: var(--secondary);
+  }
+  
+}
 .load-text span {
   -webkit-animation: loading 1s infinite alternate;
   animation: loading 1s infinite alternate;
@@ -358,18 +367,6 @@ small.text {
 
 /* ====================== [ End mouse-cursor ] ====================== */
 /* --------------- dropdown --------------- */
-.dropdown-toggle::after {
-  position: relative;
-  top: 3px;
-  opacity: 0.8;
-  content: "";
-  display: inline-block;
-  font-family: "Font Awesome 6 Pro";
-  border: 0;
-  line-height: 1;
-  font-size: 0.8em;
-}
-
 .dropdown-menu {
   position: absolute !important;
   min-width: 220px;
