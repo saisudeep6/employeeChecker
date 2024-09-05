@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BGV Vendor</title>
-
+    <title>Payment Link</title>
     <!-- CDN of Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    
-    <!-- google icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <!-- CSS styles -->
     <link rel="stylesheet" href="companyAllCSS.css">
   </head>
+
   <body>
     <div id="spinner" class="show bg-white w-screen h-screen flex flex-row items-center justify-center overflow-hidden">
       <div  class="spinner">
@@ -137,65 +138,82 @@
     </header>
     <!-- ========== END HEADER ========== -->
      <!-- Hero Start -->
-    <section class="HeroSection container-fluid p-5">
-      <div class="BGVvendor grid lg:grid-cols-12">
-        <div class="col-span-12">
-            <div class="p-5">
-                <h1 class="color-secondary text-center sm:text-xl lg:text-3xl">Welcome to BGV Vendor</h1>
-            </div>
+    <section class="MainCommonSection container-fluid h-screen p-5">
+      <div class="lg:w-5/6 m-auto">
+        <h1 class="text-center Commonheading pt-5 color-secondary">Payment Options</h1>
+        <div class="paymentCard ">
+          <p class="text-center color-secondary  pt-5">The payment of the BGV is given in the link below. Please proceed if you want to payment for the given below prices</p>
+          <p class="text-center text-red-600 pt-5 underline "><a href="">www.paymentgateway.com</a></p>
+          <p class="text-center color-secondary pt-5">Thank you for your application</p>
+          <div id="PrePaymentTable" class="paymenttable" style="display: block;">
+            <p class="text-center text-xl color-secondary pt-5">Please confirm your Payment</p>
+            <table class="table-auto lg:w-5/6  m-auto">
+              <tbody>
+                <tr>
+                  <td class="tablehead">PO id</td>
+                  <td>:</td>
+                  <td>213434534</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">Case Amount in INR</td>
+                  <td>:</td>
+                  <td>205/-</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">GST Amount in INR</td>
+                  <td>:</td>
+                  <td>240/-</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">Total Amount in INR</td>
+                  <td>:</td>
+                  <td>545/-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="PostPaymentTable" class="paymenttable" style="display: none;">
+            <p class="text-center text-xl text-green-700 pt-5">Your payment is success !!!</p>
+            <table class="table-auto lg:w-5/6  m-auto">
+              <tbody>
+                <tr>
+                  <td class="tablehead">PO id</td>
+                  <td>:</td>
+                  <td>213434534</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">Case Amount in INR</td>
+                  <td>:</td>
+                  <td>205/-</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">GST Amount in INR</td>
+                  <td>:</td>
+                  <td>240/-</td>
+                </tr>
+                <tr>
+                  <td class="tablehead">Total Amount in INR</td>
+                  <td>:</td>
+                  <td>545/-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-center pt-5 flex items-center justify-center">
+            <button id="ConfirmButton" class="butn mx-4" onclick="confirm()">Confirm</button>
+            <button id="PrintButton" class="butn mx-4" style="display: none;" onclick="window.print()">Print</button>
+            <button class="butn mx-4">Deny</button>
+          </div>
         </div>
-        <div class="col-span-12">
-            <div class="lg:w-5/6 full md:flex md:items-center md:justify-between m-auto">
-              <a href="BVGNewCase.html"><button class="butn rounded-xl flex items-center mb-2">New Case<span class="material-symbols-outlined ml-2">library_add</span></button></a>
-            </div>
-        </div>
-        <div class="col-span-12 p-2" style="overflow:hidden;">
-            <div class="ourtable2 w-full lg:w-5/6 my-3 lg:m-auto rounded-xl p-4" >
-                <table class="table-auto w-full ">
-                    <thead>
-                    <tr>
-                        <th>Case NO</th>
-                        <th>Candidate Name</th>
-                        <th>Date of Joining</th>
-                        <th>Current status</th>
-                        <th>Something</th>
-                        <th>Actions</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>September</td>
-                        <td><a href="POid.html">213434534</a></td>
-                        <td>24500/-</td>
-                        <td>1324462342</td>
-                        <td>12-10-2024</td>
-                        <td class="actions">
-                            <div class="flex items-center justify-between ">
-                                <a href=""><span class="material-symbols-outlined" title="Reminder">notifications</span></a>
-                                <a href=""><span class="material-symbols-outlined" title="Delete">delete</span></a>
-                                <a href=""><span class="material-symbols-outlined" title="Edit">edit</span></a>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-span-12">
-            <div class="text-center mt-3">
-                <a href="index.html"><button class="butn rounded-xl">Logout</button></a>
-            </div>
-        </div>
+        
       </div>
     </section>
     <!-- Hero Ends -->
 
     <!-- Footer Start -->
-    <footer class="footer rounded-lg shadow dark:bg-gray-800">
+    <footer class="bg-white rounded-lg shadow dark:bg-gray-800">
       <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="color-secondary text-sm sm:text-center flex items-center">Powered by <img class="mx-3" src="/assets/img/XEmp-logo9.png" alt="">Sevices</span>
-        
-        <span class="color-secondary text-sm sm:text-center">  © 2024 All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024  Powered by XEmp Services™. All Rights Reserved.
       </span>
       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
@@ -215,7 +233,6 @@
     </footer>
     <!-- Footer End -->
 
-    <!-- User Details Modal -->
     <div id="top-right-modal" data-modal-placement="top-right" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
       <div class="relative max-w-xl max-h-full">
           <!-- Modal content -->
@@ -246,10 +263,9 @@
             </div>
           </div>
       </div>
-    </div>
+  </div>
 
     <script src="companyJS.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-
   </body>
 </html>

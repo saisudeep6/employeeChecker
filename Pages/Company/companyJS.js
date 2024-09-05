@@ -19,3 +19,11 @@ function changeText(event){
       document.getElementById('mainHeroContent_3').style.display="block";
     }
   }
+
+function confirm(){
+      document.getElementById('PrePaymentTable').style.display="none";
+      document.getElementById('PostPaymentTable').style.display="block";
+      document.getElementById('ConfirmButton').style.display="none";
+      document.getElementById('PrintButton').style.display="block";
+
+}
